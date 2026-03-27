@@ -1,20 +1,17 @@
-# Orbit CLI Pitch Deck
+# The Rapture Presentation
 
-An interactive, web-based presentation and live execution demo for the **Orbit CLI** and **StorageGrid** migration tools. This application serves as a dynamic pitch deck to showcase how Orbit CLI automates the translation of legacy mainframe logic into modern Go structs and batch configurations.
+An interactive, web-based presentation constructed as a dynamic pitch deck. This application explores various themes through smooth slide transitions and immersive visuals.
 
 ## Features
 
-- **Interactive Presentation Slides:** Smooth, animated transitions between slides explaining the problem, solution, and architecture.
-- **Live Execution Demo:** A built-in terminal simulator that visually demonstrates the Orbit CLI in action.
-  - **Controlled Execution:** Presenters can control when the mock execution starts via a "Run Execution" button.
-  - **Typing Animations:** Simulates real-time command typing and interactive CLI prompts.
-  - **Log Streaming:** Displays realistic output logs for `orbit --init`, `orbit --migrate`, and `storagegrid-cli` commands.
-- **Modern UI/UX:** Built with a sleek, dark-mode aesthetic using Tailwind CSS and Framer Motion.
+- **Interactive Presentation Slides:** Smooth, animated transitions between slides exploring themes such as Pattern, Descent, Separation, Condition, Position, Possessor, and Security.
+- **Dynamic Interactions:** Built-in verse modal, swipeable views, and full-screen scaling presentation mode.
+- **Modern UI/UX:** Built with a sleek, dark-mode amber aesthetic using Tailwind CSS and Framer Motion.
 
 ## Tech Stack
 
-- **Framework:** React 18 + Vite
-- **Styling:** Tailwind CSS
+- **Framework:** React 19 + Vite
+- **Styling:** Tailwind CSS 4
 - **Animations:** Framer Motion (`motion/react`)
 - **Icons:** Lucide React
 
@@ -41,13 +38,6 @@ An interactive, web-based presentation and live execution demo for the **Orbit C
 
 ## Project Structure
 
-- `src/components/slides/`: Contains the individual slide components (e.g., `DemoSlide.tsx` for the live execution demo).
+- `src/components/slides/`: Contains the individual presentation slides (e.g., `TitleSlide.tsx`, `PatternSlide.tsx`).
 - `src/App.tsx`: The main application entry point that manages slide navigation and state.
-- `src/index.css`: Global styles and Tailwind CSS configuration.
-
-## Demo Scenarios
-
-The "Live Execution Demo" slide includes three interactive scenarios:
-1. **Orbit CLI: Init:** Demonstrates scaffolding a new project codebase (`./orbit --init`).
-2. **Orbit CLI: Migrate:** Shows the extraction and translation of legacy Talon Batch logic into Go (`./orbit --migrate`).
-3. **StorageGrid Server:** Simulates a mock downstream server receiving and validating the translated payload.
+- `src/context/`: Contains context providers like `VerseProvider` for app-wide state.
